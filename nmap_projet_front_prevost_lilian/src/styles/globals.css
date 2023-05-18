@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-switch:checked {
+  @apply transition-transform transform translate-x-7 duration-500;
+}
+
+.theme-switch:checked + .theme-switch-label {
+  @apply bg-blue-300;
+}
